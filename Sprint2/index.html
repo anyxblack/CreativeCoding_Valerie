@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://unpkg.com/rita"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+  <div class="nav">
+    <a href="/index.html">x</a>
+    <button class="show-popup">?</button>
+
+  </div>
+  <div class="popup-container">
+    <div class="popup-box">
+      <div class="close">
+        <h1>Sprint 2</h1>
+        <button class="close-button">x</button>
+      </div>
+
+      <p>
+        Im zweiten Sprint hat unsere Gruppe Spammails gesammelt und diese mit der RiTa-Markov-Chain zu einer neuen Mail
+        zusammengefügt. Für meine Umsetzung habe ich mich entschieden, das Design visuell wie ein typisches
+        E-Mail-Fenster eines Mac-Gerätes zu gestalten.
+        <br>
+        Die Markov-Chain erstellt aus den E-Mails einen Block Text. Um das Gefühl einer echten E-Mail zu verstärken,
+        habe ich eine Begrüssung und eine Verabschiedung hinzugefügt. Für die Begrüssung habe ich ein Array bestehend
+        aus allen Begrüssungen der Spammails benutzt. Für die Verabschiedung habe ich eine weitere Markov-Chain
+        verwendet.
+        <br><br>
+        Die Texte, die aus den Markov-Chains entstehen, erinnern erstaunlich stark an typische Spammails. Sätze, die
+        nicht immer ganz beendet werden, interessante Wortwahlen und Satzzeichen an Stellen, an denen man diese nicht
+        erwartet. Würde mich eine solche E-Mail erreichen, dann würde ich diese nicht stärker hinterfragen, wie die
+        anderen Spammails. Dadurch stelle sich dann bei mir die Frage, wie und von wem Spammails normalerweise verfasst
+        werden. Ebenfalls wunderte ich mich, wie der Algorithmus funktioniert, der die Spammails erkennt und diese
+        herausfiltert. Vor allem interessant fände ich es hier zu wissen, welche Formate und Wörter vom Algorithmus als
+        Spam klassifiziert werden. Es wäre interessant zu untersuchen, wie maschinelles Lernen und andere
+        fortschrittliche Techniken zur Verbesserung der Spam-Filterung eingesetzt werden können.
+        <br><br>
+        Der zweite Sprint hat mir dabei geholfen, mein sehr schmales Wissen über Markov-Chains zu vertiefen und die
+        Funktionsweise dieser besser zu verstehen. Vor diesem Projekt hatte ich nur eine grobe Vorstellung davon, wie
+        Markov-Chains funktionieren. Besonders aufschlussreich war für mich, zu sehen, wie kleine Änderungen in den
+        Eingabedaten oder in der Konfiguration der Markov-Chain grosse Auswirkungen auf das Endergebnis haben können.
+        Dies hat mir geholfen, ein tieferes Verständnis für die Funktionsweise und die Flexibilität dieser Algorithmen
+        zu entwickeln.
+      </p>
+    </div>
+    <script src="sketch.js"></script>
+
+
+    <script>
+      const showPopup = document.querySelector('.show-popup');
+      const popupContainer = document.querySelector('.popup-container');
+      const closeButton = document.querySelector('.close-button');
+
+      showPopup.onclick = () => {
+        popupContainer.classList.add('active');
+      }
+
+      closeButton.onclick = () => {
+        popupContainer.classList.remove('active');
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+<div class="image-container">
+    <img src="assets/FINAL.gif" alt="Final">
+    <img src="assets/Spreads.png" alt="Spreads">
+</div>
+
+  <div class="nav">
+    <a href="/docu/index.html">x</a>
+    <button class="show-popup">?</button>
+
+  </div>
+
+
+  <div class="popup-container">
+    <div class="popup-box">
+      <div class="close">
+        <h1>Sprint 3</h1>
+        <button class="close-button">x</button>
+      </div>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam atque iusto obcaecati unde ut officia, ipsam excepturi nobis vitae, ratione sunt provident enim at error. Eveniet fugit odio aut optio?
+      </p>
+    </div>
+
+    </div>
+
+
+    <script>
+      const showPopup = document.querySelector('.show-popup');
+      const popupContainer = document.querySelector('.popup-container');
+      const closeButton = document.querySelector('.close-button');
+
+      showPopup.onclick = () => {
+        popupContainer.classList.add('active');
+      }
+
+      closeButton.onclick = () => {
+        popupContainer.classList.remove('active');
+      }
+    </script>
+
+
+
+</html>

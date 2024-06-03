@@ -4,6 +4,7 @@ html, body {
 }
 canvas {
   display: block;
+  background-color: rgb(250, 220, 0);
 }
 
 @font-face {

@@ -70,7 +70,8 @@ a:hover {
 }
 
 .popup-container .popup-box {
-  width: 38vw;
+  width: 50vw;
+  max-height: 90vh;
   background: white;
   border-radius: 6px;
   padding: 0 30px 30px 30px;

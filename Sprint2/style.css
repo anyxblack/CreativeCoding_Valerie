@@ -29,7 +29,7 @@ canvas {
 
 @font-face {
   font-family: "Monument";
-  src: url(asset/MONUMENTEXTENDED-REGULAR.OTF);
+  src: url(../asset/MONUMENTEXTENDED-REGULAR.OTF);
 }
 
 html, body {
